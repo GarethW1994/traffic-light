@@ -1,10 +1,9 @@
 captureTimeChange(captureTrafficLightChange);
 
 function captureTrafficLightChange(number){
-    interval();
     //write your code here!;
     // number is the value entered in the text on the screen
-/*   if (number > 40) {
+   if (number > 40) {
       go();
     }
     else if (number >= 30 && number <= 40) {
@@ -12,5 +11,5 @@ function captureTrafficLightChange(number){
     }
     else {
       stop();
-    } */
-}
+    } 
+};

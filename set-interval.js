@@ -12,23 +12,22 @@ function interval() {
         counter++;
         // write some code here
 
-  if (counter === 60)
-  {
-    counter = 0;
-  }
+        if (counter > 40) {
+          go();
+        }
+        else if (counter >= 30 && counter <= 40) {
+          caution();
+        }
+        else if (counter < 29){
+          stop();
+        }
 
-  if (counter > 40) {
-    go();
-  }
+        if (counter === 60) {
+          counter = 0;
+        }
 
-  if (counter > 29 < 40) {
-    caution();
-  }
 
-  if (counter < 29) {
-    stop();
-  }
-      showNumber(counter);
+        showNumber(counter);
       }
 
 

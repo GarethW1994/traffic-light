@@ -10,9 +10,19 @@ function showNumber(num){
 
 function interval(){
         counter++;
-        // write some code here
-
         showNumber(counter);
+        // write some code here
+        if (counter > 0) {
+          go();
+        }
+        else if (counter >= 30 && counter <= 40) {
+          caution();
+        }
+        else {
+          stop();
+        }
+        };
+
 }
 
 setInterval(interval, 500);
